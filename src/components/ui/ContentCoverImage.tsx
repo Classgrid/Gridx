@@ -4,14 +4,12 @@ import { cn } from "@/lib/utils";
 type ContentCoverImageProps = {
   src: string;
   alt: string;
-  priority?: boolean;
   className?: string;
 };
 
 export function ContentCoverImage({ 
   src, 
   alt, 
-  priority = false, 
   className 
 }: ContentCoverImageProps) {
   return (

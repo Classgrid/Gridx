@@ -11,7 +11,7 @@ interface SpotlightButtonProps extends React.ButtonHTMLAttributes<HTMLButtonElem
 
 export const SpotlightButton = React.forwardRef<HTMLButtonElement, SpotlightButtonProps>(
   ({ children, className, variant = "primary", asChild, ...props }, ref) => {
-    const divRef = useRef<HTMLButtonElement>(null);
+    const divRef = useRef<HTMLButtonElement | null>(null);
     const [isFocused, setIsFocused] = useState(false);
     const [position, setPosition] = useState({ x: 0, y: 0 });
     const [opacity, setOpacity] = useState(0);
@@ -61,7 +61,7 @@ export const SpotlightButton = React.forwardRef<HTMLButtonElement, SpotlightButt
           // Handle both refs
           divRef.current = node;
           if (typeof ref === "function") ref(node);
-          else if (ref) ref.current = node;
+          else if (ref) (ref as React.MutableRefObject<HTMLButtonElement | null>).current = node;
         }}
         onMouseMove={handleMouseMove}
         onFocus={handleFocus}

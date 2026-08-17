@@ -68,6 +68,8 @@ export function ImageGallery({ images, className, maxDisplay, onRemove, onEdit }
   const [direction, setDirection] = useState(0);
   const clickedImageRef = useRef<GalleryImage | null>(null);
   const hasNavigatedRef = useRef(false);
+  const touchStartX = useRef<number | null>(null);
+  const touchStartY = useRef<number | null>(null);
 
   const selectedIndex = selectedImage
     ? images.findIndex((img) => img.id === selectedImage.id)

@@ -79,7 +79,6 @@ function SelectContent({
         alignOffset={alignOffset}
         alignItemWithTrigger={alignItemWithTrigger}
         collisionPadding={0}
-        sticky="always"
         className="isolate z-50"
       >
         <SelectPrimitive.Popup
