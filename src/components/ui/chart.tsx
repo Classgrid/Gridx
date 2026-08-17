@@ -136,7 +136,7 @@ function ChartTooltipContent({
     labelKey?: string
   } & Omit<
     RechartsPrimitive.DefaultTooltipContentProps<
-      TooltipValueType,
+      any,
       TooltipNameType
     >,
     "accessibilityLayer"

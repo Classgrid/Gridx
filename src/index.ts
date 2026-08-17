@@ -62,6 +62,7 @@ export * from "./components/ui/pill-tabs";
 export * from "./components/ui/popover";
 export * from "./components/ui/premium-card";
 export * from "./components/ui/progress";
+export * from "./components/ui/ProgressOverlay";
 export * from "./components/ui/radial-orbital-timeline-wrapper";
 export * from "./components/ui/radial-orbital-timeline";
 export * from "./components/ui/radio-group";
