@@ -1,6 +1,6 @@
 "use client";
 
-import IntroAnimation from "@/components/ui/scroll-morph-hero";
+import IntroAnimation from "./scroll-morph-hero";
 
 export default function Demo() {
     return (

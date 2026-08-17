@@ -5,8 +5,8 @@ import React, { type ComponentPropsWithoutRef, type ReactNode, useRef, useState,
 import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { motion, useMotionTemplate, useMotionValue, useSpring } from "framer-motion";
 import { cn } from "@/lib/utils";
-import { Button } from "@/components/ui/button";
-import { Chip } from "@/components/ui/chip";
+import { Button } from "./button";
+import { Chip } from "./chip";
 
 import { IconRenderer } from "./icon-renderer";
 

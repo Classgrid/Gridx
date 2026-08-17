@@ -1,7 +1,7 @@
 "use client";
 
-import { Button } from "@/components/ui/button";
-import { SectionAccentBar } from "@/components/ui/section-accent-bar";
+import { Button } from "./button";
+import { SectionAccentBar } from "./section-accent-bar";
 import React from "react";
 
 const ICONS_ROW1 = [
