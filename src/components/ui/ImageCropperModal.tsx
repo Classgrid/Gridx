@@ -47,7 +47,7 @@ export function ImageCropperModal({
   const [crop, setCrop] = useState<Crop>();
   const [completedCrop, setCompletedCrop] = useState<PixelCrop>();
   const imgRef = useRef<HTMLImageElement>(null);
-  const [uploadStatus, setUploadStatus] = useState<"idle" | "uploading" | "complete">("idle");
+  const [uploadStatus, setUploadStatus] = useState<"idle" | "uploading" | "complete" | "error">("idle");
 
   React.useEffect(() => {
     if (isOpen) {
