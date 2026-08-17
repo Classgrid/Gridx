@@ -1,6 +1,6 @@
 {
   "name": "@classgrid/gridx",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "description": "A premium React UI component library built on Radix primitives and Tailwind CSS",
   "author": "Nikhil Shinde",
   "license": "MIT",
